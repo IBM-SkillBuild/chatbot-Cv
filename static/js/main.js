@@ -70,20 +70,21 @@ $('#botonbuscar').click(function () {
   if ($('#search').val() != '') {
     server.hola();
     $('#collapseOne').collapse('hide');
-    
+     $('#collapseTwo').collapse('hide');
+    $('#mensaje2').text("");
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
-    }, 1500);
-
-    setTimeout(function () {
       var maq = document.getElementById('leer');
-      var respuesta = document.getElementById('datos');
-      var typewriter = new Typewriter(maq, {
-        loop: false,
-        delay: 125,
-      });
-      typewriter.typeString(factor).start();
+      maq.innerHTML=""
+       var respuesta = document.getElementById('datos');
+       var typewriter = new Typewriter(maq, {
+         loop: false,
+         delay: 125,
+       });
+       typewriter.typeString(factor).start();
     }, 1000);
+
+   
   }
    setTimeout(function () {
      if (accion.includes('ver boton cv')) {
@@ -98,36 +99,28 @@ $('#botonbuscar').click(function () {
      } else {
        $('#vervideo').hide();
      }
-   }, 1000);
-   setTimeout(function () {
      if (accion.includes('ver github')) {
        $('#github').show();
      } else {
        $('#github').hide();
      }
-   }, 1000);
-  
-   setTimeout(function () {
-     if (accion.includes('pdf')) {
-       $('#micvpdf').show();
-     } else {
-       $('#micvpdf').hide();
+      if (accion.includes('pdf')) {
+        $('#micvpdf').show();
+      } else {
+        $('#micvpdf').hide();
      }
-   }, 1000);
-  setTimeout(function () {
-    if (accion.includes('linkedin')) {
-      $('#linkedin').show();
-    } else {
-      $('#linkedin').hide();
-    }
-  }, 1000);
-   setTimeout(function () {
-     if (accion.includes('flask')) {
-       $('#verflask').show();
-     } else {
-       $('#verflask').hide();
+      if (accion.includes('linkedin')) {
+        $('#linkedin').show();
+      } else {
+        $('#linkedin').hide();
      }
+       if (accion.includes('flask')) {
+         $('#verflask').show();
+       } else {
+         $('#verflask').hide();
+       }
    }, 1000);
+   
  
 });
 

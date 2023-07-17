@@ -24,7 +24,8 @@ class App:
       pass    
     def hola(self):
         pregunta=str(self.js.dom.search.value)
-        self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+        self.js.factor =""
+        self.js.dom.mensaje2.innerHTML=""
         user_input=pregunta.lower()
         mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
         mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
