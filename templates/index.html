@@ -22,35 +22,30 @@
  <div class="d-flex justify-content-center align-items-center">
   <br>
     <h1 class="text-center">Chatbot Cv Eduardo Cabrera</h1>
-     <h4 class="text-center">MVP Producto minimo viable</h4>
-     <div class="col-md-12 text-center">
+    <h4 class="text-center">MVP Producto minimo viable</h4>
+    <div class="col-md-12 text-center">
       <button id="todo" class="btn btn-info text-center oculto">No encuentras lo que quieres?</button>
-     
-     </div>
-     <br><br>
-   </div>
+    </div>
+    br><br>
+ </div>
 <div class="container edu">
-  
-	
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-		<div class="panel panel-default panel-primero">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h4 class="panel-title">
-					<a role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						<i class="more-less glyphicon glyphicon-plus"></i>
-						Preguntame lo que quieras en español
-					</a>
-				</h4>
-			</div>
+  	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  		<div class="panel panel-default panel-primero">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="more-less glyphicon glyphicon-plus"></i>
+              Preguntame lo que quieras en español
+            </a>
+          </h4>
+        </div>
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
 					  <div class="d-flex flex-column">
-  <p id="mensaje">Que quieres saber ?</p>
-  <input type="text" id="search"  class="form-control" placeholder="type your question and press enter">
-  <button id="botonbuscar" class="btn-primary oculto" >click-me or press Enter</button>
-  
-  </div>
+              <p id="mensaje">Que quieres saber ?</p>
+              <input type="text" id="search"  class="form-control" placeholder="type your question and press enter">
+              <button id="botonbuscar" class="btn-primary oculto" >click-me or press Enter</button>
+            </div>
 				</div>
 			</div>
 		</div>
@@ -84,6 +79,9 @@
              <div class="col-md-12 text-center">
               <button id="linkedin" onclick=" verlinkedin()" class="btn btn-info text-center oculto">Ver en LinkedIn</button>
             </div>
+             <div class="col-md-12 text-center">
+              <button id="verflask" onclick=" verflask()" class="btn btn-info text-center oculto">Ver Repositorio de esta App</button>
+            </div>
 				</div>
 			</div>
 		</div>
@@ -110,17 +108,23 @@
 	</div><!-- panel-group -->
 	
 	<div style="display: none" id="preguntas">
-       <select id="todaslaspreguntas" class="selectpicker " data-show-subtext="true" data-live-search="true">
-              <option data-subtext="Preguntas" class="boxoption" value="Como te llamas, quien eres">PREGUNTAS CON RESPUESTA</option>
-              <option data-subtext="Generales" class="boxoption"value="Como te llamas, quien eres">Como te llamas ?</option>
-              <option data-subtext="Generales" class="boxoption"value="como funciona esta app">como funciona esta app</option>
-              <option data-subtext="Back-End" class="boxoption"value="Que sabes hacer en programacion Python">Que sabes hacer en programacion Python ?</option>
-              <option data-subtext="Front-End" class="boxoption"value="Que sabes hacer en Front End">Que sabes hacer en Front End ?</option>
-             
-              
-          </select>
+    <select id="todaslaspreguntas" class="selectpicker " data-show-subtext="true" data-live-search="true">
+        <option data-subtext="Preguntas" class="boxoption" value="Como te llamas, quien eres">PREGUNTAS CON RESPUESTA</option>
+        <option data-subtext="Generales" class="boxoption"value="Como te llamas, quien eres">Como te llamas ?</option>
+        <option data-subtext="Generales" class="boxoption"value="Datos de contacto">Datos de contacto</option>     
+        <option data-subtext="Generales" class="boxoption"value="como funciona esta app">como funciona esta app</option>
+        <option data-subtext="Generales" class="boxoption"value="¿ manejas Programacion orientada a objetos?">¿ manejas Programacion orientada a objetos?</option>
+        <option data-subtext="Generales" class="boxoption"value="Formacion Bootcamps titulos certificados">Formacion Bootcamps titulos certificados</option>
+        <option data-subtext="Back-End" class="boxoption"value="Que sabes hacer en programacion Python">Que sabes hacer en programacion Python ?</option>
+        <option data-subtext="Front-End" class="boxoption"value="Que sabes hacer en Front End">Que sabes hacer en Front End ?</option>
+        <option data-subtext="Front-End" class="boxoption"value="¿Por qué elegirte a ti y no a otro programador?">¿Por qué elegirte a ti y no a otro programador?</option>
+        <option data-subtext="Front-End" class="boxoption"value="¿Qué lenguajes de programación dominas y en qué proyectos lo has aplicado?">¿Qué lenguajes de programación dominas y en qué proyectos lo has aplicado?</option>
+        <option data-subtext="Front-End" class="boxoption"value="¿Deseas aprender a usar nuevas herramientas y tecnologías?">¿Deseas aprender a usar nuevas herramientas y tecnologías?</option>
+        <option data-subtext="Front-End" class="boxoption"value="¿Cuáles son tus 3 principales habilidades?">¿Cuáles son tus 3 principales habilidades?</option>
+        <option data-subtext="Front-End" class="boxoption"value="Experiencia laboral">Experiencia laboral</option>
+      </select>
          
-    </div>
+ </div>
    
 </div><!-- container -->
 

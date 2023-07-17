@@ -120,6 +120,13 @@ $('#botonbuscar').click(function () {
       $('#linkedin').hide();
     }
   }, 1000);
+   setTimeout(function () {
+     if (accion.includes('flask')) {
+       $('#verflask').show();
+     } else {
+       $('#verflask').hide();
+     }
+   }, 1000);
  
 });
 
@@ -158,4 +165,8 @@ function vervideo() {
 
 function verlinkedin() {
   window.open('https://www.linkedin.com/in/e-cabrera-blazquez/', '_blank');
+}
+
+function verflask() {
+  window.open('https://github.com/IBM-SkillBuild/flask-chatbot', '_blank');
 }

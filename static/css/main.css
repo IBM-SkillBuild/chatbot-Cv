@@ -129,6 +129,7 @@ button{
 		border-radius: 0;
 		box-shadow: none;
 		border-color: #EEEEEE;
+   
 	}
 
 	.panel-default > .panel-heading {
@@ -145,8 +146,9 @@ button{
 
 	.panel-title > a {
 		display: block;
-		padding: 15px;
+		padding: 14px;
 		text-decoration: none;
+    font-size: 18px;
 	}
 
 	.more-less {
@@ -156,6 +158,7 @@ button{
 
 	.panel-default > .panel-heading + .panel-collapse > .panel-body {
 		border-top-color: #EEEEEE;
+   
 	}
 
 /* ----- v CAN BE DELETED v ----- */
@@ -166,6 +169,8 @@ body {
 .edu {
 	padding-top: 60px;
 	padding-bottom: 110px;
+  max-width: 650px;
+   
 }
 
 .demo-footer {
