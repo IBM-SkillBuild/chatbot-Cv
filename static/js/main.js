@@ -59,9 +59,8 @@ $('#search').on('change keydown keyup paste input', function (e) {
 
 $('#headingTwo').click(function () {
   $('#botonbuscar').click();
-  setTimeout(function () {
-    $('#search').val('');
-  }, 3000);
+      $('#search').val('');
+  
  
 });
   
