@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   history.forward();
   window.onpopstate = function () {
     history.go(1);
+  var mipregunta = document.getElementById('search');
   };
 
   $('.panel-primero').on('show.bs.collapse', function () {
@@ -67,7 +68,7 @@ $('#headingTwo').click(function () {
   
 
 $('#botonbuscar').click(function () {
-  var mipregunta = document.getElementById('search');
+ 
   if (mipregunta.value() != '') {
      setTimeout(function () {
       server.hola();
