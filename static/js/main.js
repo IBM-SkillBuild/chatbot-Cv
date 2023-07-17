@@ -170,3 +170,7 @@ function verlinkedin() {
 function verflask() {
   window.open('https://github.com/IBM-SkillBuild/flask-chatbot', '_blank');
 }
+
+$('#todo').click(function () {
+ $('#collapseTwo').collapse('hide');
+})

@@ -29,7 +29,7 @@
 
     {
       "pregunta": "Que sabes hacer en Front End",
-      "respuesta": "Me manejo en HTML, CSS y Javascript y me atrevo en Bundles o Frameworks como React o Vue",
+      "respuesta": "Conozco el tridente HTML, CSS y Javascript y me atrevo en Bundles o Frameworks como React o Vue. Aprendo rápido cualquier otro que fuera necesario",
       "accion": "ver github",
       "path": "",
       "url": "",
@@ -44,8 +44,8 @@
       "seguridad": "admin"
     },
     {
-      "pregunta": "¿ manejas Programacion orientada a objetos?",
-      "respuesta": "Si.Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "pregunta": "¿ manejas Programación orientada a objetos?",
+      "respuesta": "Si.Es el paradigma más usado en programacion, conozco las clases, sus atributos y métodos. La instancia de objetos. La herencia, la encapsulación y la abstracción",
       "accion": "ver mi cv en PDF",
       "path": "",
       "url": "",
@@ -53,7 +53,7 @@
     },
     {
       "pregunta": "Programacion orientada a objetos. La herencia",
-      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y métodos. La instancia de objetos. La herencia, la encapsulación y la abstracción",
       "accion": "ver mi cv en PDF",
       "path": "",
       "url": "",
@@ -133,7 +133,7 @@
     },
     {
       "pregunta": "Experiencia laboral",
-      "respuesta": "He realizado practicas de programación Full Stack (python) en Mr.houston Tech Solution. Posteriormente trabaje 3 tres meses más para su marca comercial Bitwok, desarrollando soluciones Filemaker",
+      "respuesta": "He realizado practicas de programación Full Stack (python) en Mr.houston Tech Solutions. Posteriormente trabaje 3 tres meses más para su marca comercial Bitwok, desarrollando soluciones Filemaker",
       "accion": "abre linkedin",
       "path": "",
       "url": "",
@@ -141,7 +141,7 @@
     },
     {
       "pregunta": "Mi último trabajo",
-      "respuesta": "Mi último trabajo ha sido en  Mr.houston Tech Solution. trabajé 3 tres meses para su marca comercial Bitwok, desarrollando soluciones Filemaker",
+      "respuesta": "Mi último trabajo ha sido en  Mr.houston Tech Solutions. trabajé 3 tres meses para su marca comercial Bitwok, desarrollando soluciones Filemaker",
       "accion": "abre linkedin",
       "path": "",
       "url": "",
