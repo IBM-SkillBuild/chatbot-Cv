@@ -69,7 +69,8 @@ $('#headingTwo').click(function () {
 
 $('#botonbuscar').click(function () {
   var mipregunta = document.getElementById('search');
-  if (mipregunta.value() != '') {
+  
+  if (mipregunta.value != '') {
      setTimeout(function () {
       server.hola();
      }, 1000);
