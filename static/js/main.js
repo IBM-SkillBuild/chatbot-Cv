@@ -13,8 +13,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $('#todo').show();
     $('#search').val('');
     $('#mensaje').text('Que quieres saber ?');
-    var mipregunta = document.getElementById('search');
+   
     setTimeout(function () {
+      var mipregunta = document.getElementById('search');
       mipregunta.focus();
     }, 200);
   });
@@ -66,7 +67,8 @@ $('#headingTwo').click(function () {
   
 
 $('#botonbuscar').click(function () {
-  if ($('#search').val() != '') {
+  var mipregunta = document.getElementById('search');
+  if (mipregunta.value() != '') {
      setTimeout(function () {
       server.hola();
      }, 1000);
