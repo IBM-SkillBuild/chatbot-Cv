@@ -23,7 +23,7 @@ class App:
     def prueba(self):
       pass    
     def hola(self):
-        pregunta=str(self.js.mipregunta)
+        pregunta=str(self.js.mipreguntavalor)
         self.js.factor =""
         self.js.dom.mensaje2.innerHTML=""
         user_input=pregunta.lower()

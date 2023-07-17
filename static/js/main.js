@@ -7,7 +7,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
   history.forward();
   window.onpopstate = function () {
     history.go(1);
-  var mipregunta = document.getElementById('search');
+    var mipregunta = document.getElementById('search');
+    var mipreguntavalor = document.getElementById('search').value;
+    
   };
 
   $('.panel-primero').on('show.bs.collapse', function () {
@@ -69,8 +71,8 @@ $('#headingTwo').click(function () {
 
 $('#botonbuscar').click(function () {
   var mipregunta = document.getElementById('search');
-  
-  if (mipregunta.value != '') {
+  var mipreguntavalor = document.getElementById('search').value;
+  if (mipreguntavalor != '') {
      setTimeout(function () {
       server.hola();
      }, 1000);
