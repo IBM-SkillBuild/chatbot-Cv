@@ -70,7 +70,7 @@ $('#botonbuscar').click(function () {
   if ($('#search').val() != '') {
     server.hola();
     $('#collapseOne').collapse('hide');
-     $('#collapseTwo').collapse('hide');
+    
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
     }, 1000);
