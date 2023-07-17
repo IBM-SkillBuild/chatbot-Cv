@@ -1,0 +1,159 @@
+{
+  
+  "datos": [
+    {
+      "pregunta": "Como te llamas, quien eres",
+      "respuesta": "Hola, Mi nombre es Eduardo. Telefono 696 44 80 60",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+
+    {
+      "pregunta": "Hola, Dime tu nombre y teléfono",
+      "respuesta": "Hola, Mi nombre es Eduardo. Telefono 696 44 80 60",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Que sabes hacer en programacion Python, Flask, FastApi, Django",
+      "respuesta": "puedo programar en python Scripts de consola, en Flask, FastApi o django",
+      "accion": "ver boton cv",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+
+    {
+      "pregunta": "Que sabes hacer en Front End",
+      "respuesta": "Me manejo en HTML, CSS y Javascript y me atrevo en Bundles o Frameworks como React o Vue",
+      "accion": "ver github",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Que sabes hacer en Back End",
+      "respuesta": "Para el Back end Me manejo en Python, aunque vi algo en PHP",
+      "accion": "ver boton cv",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos.",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos. La herencia",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos. La encapsulación",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos. Instancia de objetos",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos. Atributos y métodos",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Programacion orientada a objetos. Abstracción",
+      "respuesta": "Es el paradigma más usado en programacion, conozco las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Estudios Formacion Bootcamps titulos certificados",
+      "respuesta": "primero Estudie Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Formacion Bootcamps titulos certificados",
+      "respuesta": "Mi formacion comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "accion": "ver mi cv en PDF",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Bootcamp titulos certificados",
+      "respuesta": "Mi formacion comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "accion": "ver boton cv",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Formacion Bootcamps titulos certificados",
+      "respuesta": "Mi Formacion comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "accion": "ver boton cv",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Datos de contacto, calle, ciudad, nombre, codigo postal (datos de contacto)",
+      "respuesta": "Datos de contacto... Hola, soy Eduardo Cabrera Blazquez. Calle Luna 27 CP (28692) Villanueva de la Cañada (Madrid)",
+      "accion": "ver boton cv",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Experiencia laboral",
+      "respuesta": "He realizado practicas de programación Full Stack (python) en Mr.houston Tech Solution. Posteriormente trabaje 3 tres meses más para su marca comercial Bitwok, desarrollando soluciones Filemaker",
+      "accion": "abre linkedin",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "Mi último trabajo",
+      "respuesta": "Mi último trabajo ha sido en  Mr.houston Tech Solution. trabajé 3 tres meses para su marca comercial Bitwok, desarrollando soluciones Filemaker",
+      "accion": "abre linkedin",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    },
+    {
+      "pregunta": "como funciona esta app",
+      "respuesta": "Se produce una iteración sobre un archivo Json. Hay una libreria que determina la respuesta más acertada basandose en un algoritmo que ofrece porcentajes de similitud basados en NLP. Procesamiento del lenguaje natural",
+      "accion": "ver video",
+      "path": "",
+      "url": "",
+      "seguridad": "admin"
+    }
+  ]
+}

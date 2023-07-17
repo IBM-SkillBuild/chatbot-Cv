@@ -1,0 +1,208 @@
+body{
+  background-color: black;
+   margin:2rem;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+.bootstrap-select {
+   width: 500px!important;
+   max-width: 500px!important;
+
+  
+}
+.bootstrap-select.btn-group .dropdown-menu.open {
+width: 500px !important;
+max-height: 400px !important;
+overflow: auto !important;
+
+
+}
+.flex-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 768px;
+  min-height: 93vh;
+  color:rgb(40, 143, 187);
+  background-color: rgb(91, 77, 218);
+  
+}
+.center{
+  margin: auto;
+  align-items: center;
+}
+.input{
+  display:block;
+  min-width: 400px;
+  max-width: 600px;
+  
+}
+h2{
+  color:rgb(175, 226, 248);
+  margin-bottom: 2rem;
+}
+.oculto{
+  display:none
+}
+.boton{
+  width: fit-content;
+  margin-top: 3rem;
+}
+.glyphicon {
+    font-size: 25px;
+}
+textarea{
+  color:   rgb(80, 7, 71);
+  display:none;
+  margin-top: 2rem;
+  /* font-size: 2.5rem; */
+  max-width: 600px ;
+  padding: 0.5rem;
+  animation: fadeIn;
+  animation-duration: 3s; 
+}
+a{
+  font-size: 25px;
+}
+.efectofadein{
+  animation: fadeIn;
+  animation-duration: 3s; 
+}
+p{
+  font-size: 2.5rem;
+  color:yellow
+}
+#parar{
+  color:brown
+}
+#mensaje,#mensaje2{
+  color: #26a69a
+}
+.absoluto{
+  position: relative;
+  bottom:150px;
+  left: 350px;
+}
+h2{
+  color: #074943
+}
+
+.botonrow{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.dosrem{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.corto{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+button{
+  margin-top: 2rem;
+}
+
+.panel-segundo{
+  background-color: rgb(194, 207, 224);
+}
+#headingOne{
+    background-color: rgb(163, 223, 176);
+}
+#headingTwo{
+    background-color: rgb(163, 189, 223);
+}
+
+#headingThree{
+    background-color: rgb(223, 185, 163);
+}
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+	.panel-group .panel {
+		border-radius: 0;
+		box-shadow: none;
+		border-color: #EEEEEE;
+	}
+
+	.panel-default > .panel-heading {
+		padding: 0;
+		border-radius: 0;
+		color: #212121;
+		background-color: #FAFAFA;
+		border-color: #EEEEEE;
+	}
+
+	.panel-title {
+		font-size: 14px;
+	}
+
+	.panel-title > a {
+		display: block;
+		padding: 15px;
+		text-decoration: none;
+	}
+
+	.more-less {
+		float: right;
+		color: #212121;
+	}
+
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: #EEEEEE;
+	}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+	background-color: #26a69a;
+}
+
+.edu {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.demo-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	background-color: #212121;
+	text-align: center;
+}
+
+.demo-footer > a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+
+.myflex{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.boxoption{
+  font-size: 18px;
+}
+
+.selectpicker{
+  font-size: 15px !important;
+}
+.filter-option {
+    font-size: 15px;
+}
+.option {
+    font-size: 15px;
+}
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- BOOTSTRAP AND MAIN CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/main.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+ <div class="d-flex justify-content-center align-items-center">
+  <br>
+    <h1 class="text-center">Chatbot Cv Eduardo Cabrera</h1>
+     <h4 class="text-center">MVP Producto minimo viable</h4>
+     <div class="col-md-12 text-center">
+      <button id="todo" class="btn btn-info text-center oculto">No encuentras lo que quieres?</button>
+     
+     </div>
+     <br><br>
+   </div>
+<div class="container edu">
+  
+	
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		<div class="panel panel-default panel-primero">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						Preguntame lo que quieras en español
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					  <div class="d-flex flex-column">
+  <p id="mensaje">Que quieres saber ?</p>
+  <input type="text" id="search"  class="form-control" placeholder="type your question and press enter">
+  <button id="botonbuscar" class="btn-primary oculto" >click-me or press Enter</button>
+  
+  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default panel-segundo">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a id="group-2" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						Descubre la respuesta escogida por mi chatbot
+					</a>
+         
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+           <p id="mensaje2">Te cuento como funciona esta app</p>
+          <h2 id="leer"></h2>
+            <div class="col-md-12 text-center">
+              <button id="micv" onclick=" iralcv()" class="btn btn-info text-center oculto">Abrir mi página Web-CV</button>
+            </div>
+            <div class="col-md-12 text-center">
+              <button id="micvpdf" onclick=" iralcvpdf()" class="btn btn-info text-center oculto">Ver mi CV en PDF</button>
+            </div>
+              <div class="col-md-12 text-center">
+              <button id="vervideo" onclick=" vervideo()" class="btn btn-info text-center oculto">Ver video de como se hizo</button>
+            </div>
+             <div class="col-md-12 text-center">
+              <button id="github" onclick=" github()" class="btn btn-info text-center oculto">Ver repositorio React-Nasa</button>
+            </div>
+             <div class="col-md-12 text-center">
+              <button id="linkedin" onclick=" verlinkedin()" class="btn btn-info text-center oculto">Ver en LinkedIn</button>
+            </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<i class="more-less glyphicon glyphicon-plus"></i>
+						Contratamé aquí mismo.
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+               <a href="https://wa.me/34696448060/?texto=Mas%Info%sobre%nueva%Coleccion%porfavor" target="_blank">Envíame un mensaje de WhatsApp</a>
+               <br>
+               <a href="https://www.linkedin.com/in/e-cabrera-blazquez/" target="_blank">Contacta conmigo en LinkedIn</a>
+
+				</div>
+			</div>
+		</div>
+
+	</div><!-- panel-group -->
+	
+	<div style="display: none" id="preguntas">
+       <select id="todaslaspreguntas" class="selectpicker " data-show-subtext="true" data-live-search="true">
+              <option data-subtext="Preguntas" class="boxoption" value="Como te llamas, quien eres">PREGUNTAS CON RESPUESTA</option>
+              <option data-subtext="Generales" class="boxoption"value="Como te llamas, quien eres">Como te llamas ?</option>
+              <option data-subtext="Generales" class="boxoption"value="como funciona esta app">como funciona esta app</option>
+              <option data-subtext="Back-End" class="boxoption"value="Que sabes hacer en programacion Python">Que sabes hacer en programacion Python ?</option>
+              <option data-subtext="Front-End" class="boxoption"value="Que sabes hacer en Front End">Que sabes hacer en Front End ?</option>
+             
+              
+          </select>
+         
+    </div>
+   
+</div><!-- container -->
+
+
+  
+  <script type="text/javascript">
+            history.pushState(null, null, location.href);
+            history.back();
+            history.forward();
+            window.onpopstate = function () { history.go(1); };
+  </script>
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- BOOTSTRAP CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <!-- ARCHIVO JS PROPIO PROYECTO -->
+    <script src="../static/js/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script>
+    var myModal =  new jBox('Modal', {
+    maxWidth: 550,
+    minHeight: 550,
+    attach: '#todo',
+    title: 'Preguntas y respuestas más relevantes',
+    responsiveWidth:true,
+    responsiveHeight:true,
+    content: $('#preguntas')
+  });
+    </script>
+    
+</body>
+</html>
