@@ -61,7 +61,7 @@ $('#headingTwo').click(function () {
   $('#botonbuscar').click();
   setTimeout(function () {
     $('#search').val('');
-  }, 1000);
+  }, 3000);
  
 });
   
@@ -73,7 +73,7 @@ $('#botonbuscar').click(function () {
     
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
-    }, 1000);
+    }, 1500);
 
     setTimeout(function () {
       var maq = document.getElementById('leer');
