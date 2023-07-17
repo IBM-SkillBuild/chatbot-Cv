@@ -70,6 +70,7 @@ $('#botonbuscar').click(function () {
   if ($('#search').val() != '') {
     server.hola();
     $('#collapseOne').collapse('hide');
+     $('#collapseTwo').collapse('hide');
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
     }, 1000);
@@ -171,6 +172,5 @@ function verflask() {
   window.open('https://github.com/IBM-SkillBuild/flask-chatbot', '_blank');
 }
 
-$('#todo').click(function () {
- $('#collapseTwo').collapse('hide');
-})
+
+
