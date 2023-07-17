@@ -67,7 +67,10 @@ $('#headingTwo').click(function () {
 
 $('#botonbuscar').click(function () {
   if ($('#search').val() != '') {
-    server.hola();
+     setTimeout(function () {
+      server.hola();
+     }, 1000);
+    
     $('#collapseOne').collapse('hide');
      $('#collapseTwo').collapse('hide');
     $('#mensaje2').text("");
