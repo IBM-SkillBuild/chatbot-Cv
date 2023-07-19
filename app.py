@@ -23,9 +23,9 @@ class App:
     def prueba(self):
       pass    
     def hola(self):
+        self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
+        self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         pregunta=str(self.js.mipreguntavalor)
-        self.js.factor =""
-        self.js.dom.mensaje2.innerHTML=""
         user_input=pregunta.lower()
         mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
         mejor_respuesta=chatbot_data['datos'][0]['respuesta']  

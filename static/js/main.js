@@ -1,5 +1,6 @@
 let factor = '';
 let accion = '';
+let mipreguntavalor=''
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
   history.pushState(null, null, location.href);
@@ -7,8 +8,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   history.forward();
   window.onpopstate = function () {
     history.go(1);
-    var mipregunta = document.getElementById('search');
-    var mipreguntavalor = document.getElementById('search').value;
+    
     
   };
 
@@ -43,10 +43,12 @@ $('#collapseTwo').on('show.bs.collapse', function (e) {
 });
 
 $('#search').on('change keydown keyup paste input', function (e) {
+  
   if ($('#search').val() == '') {
     $('#mensaje').text('Que quieres saber ?');
   } else {
     $('#mensaje').text('Ya te estoy escuchando');
+   
   }
 
   if (e.which == 13) {
@@ -54,6 +56,7 @@ $('#search').on('change keydown keyup paste input', function (e) {
     if ($('#search').val() == '') {
       $('#mensaje').text('Debes rellenar una pregunta ?');
     } else {
+      mipreguntavalor = $('#search').val();
       $('#botonbuscar').click();
     }
 
@@ -62,7 +65,9 @@ $('#search').on('change keydown keyup paste input', function (e) {
 });
 
 $('#headingTwo').click(function () {
-  $('#botonbuscar').click();
+   mipreguntavalor = $('#search').val();
+   $('#botonbuscar').click();
+  
       $('#search').val('');
   
  
@@ -70,20 +75,20 @@ $('#headingTwo').click(function () {
   
 
 $('#botonbuscar').click(function () {
-  var mipregunta = document.getElementById('search');
-  var mipreguntavalor = document.getElementById('search').value;
+  
   if (mipreguntavalor != '') {
-     setTimeout(function () {
+    
       server.hola();
-     }, 1000);
+    
     
     $('#collapseOne').collapse('hide');
      $('#collapseTwo').collapse('hide');
-    $('#mensaje2').text("");
+   
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
+       
       var maq = document.getElementById('leer');
-      maq.innerHTML=""
+      
        var respuesta = document.getElementById('datos');
        var typewriter = new Typewriter(maq, {
          loop: false,
@@ -147,6 +152,7 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
 $('#todaslaspreguntas').on('change', function () {
   $('#search').val(this.value)
+  mipreguntavalor = $('#search').val();
   myModal.close();
    $('#botonbuscar').click();
 });
