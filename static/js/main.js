@@ -81,8 +81,7 @@ $('#botonbuscar').click(function () {
       server.hola();
     
     
-    $('#collapseOne').collapse('hide');
-     $('#collapseTwo').collapse('hide');
+    
    
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
