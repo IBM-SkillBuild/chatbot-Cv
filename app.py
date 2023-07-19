@@ -55,9 +55,7 @@ class App:
                  self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
                  self.js.factor = str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
                  self.js.accion = str(mejor_accion)
-                else:
-                   self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
-                   self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+                
           
                 
       
