@@ -30,6 +30,7 @@ class App():
         self.acc="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         #self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         pregunta=str(self.js.mipreguntavalor)
+        time.sleep(3)
         user_input=pregunta.lower()
         mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
         mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
