@@ -15,7 +15,7 @@ with open('myjson.json', 'r', encoding='utf-8') as f:
    
 
 @jsf.use(app)
-class App:
+class App():
    
     def __init__(self):
         pass
@@ -23,8 +23,13 @@ class App:
     def prueba(self):
       pass    
     def hola(self):
-        self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
-        self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+       
+        #self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
+        self.mensaje2="Consulta no coincidente"
+        self.factor="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+        self.acc="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+        self.js.edu(self.mensaje2,self.factor,self.acc)
+        #self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         pregunta=str(self.js.mipreguntavalor)
         user_input=pregunta.lower()
         mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
@@ -33,8 +38,7 @@ class App:
         mejor_ejecucion=chatbot_data['datos'][0]['path'] 
         mejor_url=chatbot_data['datos'][0]['url'] 
          
-       
-        
+   
         porcentaje_obtenido=0
                                                   
         for question in chatbot_data['datos']:
@@ -52,14 +56,24 @@ class App:
                 mejor_seguridad=question['seguridad'].lower()
                 porcentaje_obtenido=porcentaje_iterado
                 if porcentaje_obtenido>80:
-                 self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
-                 self.js.factor = str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
-                 self.js.accion = str(mejor_accion)
-                else:
-                   self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
-                   self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
-          
+
+                 #self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
+                 #self.js.factor = str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
+                 #self.js.accion = str(mejor_accion)
+                 self.mensaje2="La mejor coincidencia....:  "+str(mejor_coincidencia)
+                 self.factor=str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
+                 self.accion=str(mejor_accion)
+                 self.acc=str(mejor_accion)
                 
+                else:
+                   #self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
+                   #self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+                   self.mensaje2="Consulta no coincidente"
+                   self.factor="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+        self.js.edu(self.mensaje2,self.factor,self.acc)        
+        
+    
+                    
       
       
           

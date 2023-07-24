@@ -81,7 +81,8 @@ $('#botonbuscar').click(function () {
       server.hola();
     
     
-    
+    $('#collapseOne').collapse('hide');
+     $('#collapseTwo').collapse('hide');
    
     setTimeout(function () {
       $('#collapseTwo').collapse('show');
@@ -179,4 +180,10 @@ function verflask() {
 }
 
 
-
+function edu(mensaje,valor,accion){
+ 
+  $('#time').text(mensaje);
+  $('#mensaje2').text(mensaje);
+  factor = valor
+  
+}
