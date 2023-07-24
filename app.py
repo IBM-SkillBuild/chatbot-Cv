@@ -28,7 +28,6 @@ class App():
         self.mensaje2="Consulta no coincidente"
         self.factor="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         self.acc="Ninguna respuesta obtiene un porcentaje de similitud permitido"
-        self.js.edu(self.mensaje2,self.factor,self.acc)
         #self.js.factor ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         pregunta=str(self.js.mipreguntavalor)
         user_input=pregunta.lower()
