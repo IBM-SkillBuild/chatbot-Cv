@@ -181,9 +181,12 @@ function verflask() {
 
 
 function edu(mensaje,valor,accion){
+ setTimeout(function () {
+   console.log('Hola Mundo');
+    $('#time').text(mensaje);
+    $('#mensaje2').text(mensaje);
+    factor = valor;
+ }, 2000);
  
-  $('#time').text(mensaje);
-  $('#mensaje2').text(mensaje);
-  factor = valor
   
 }
