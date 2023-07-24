@@ -70,6 +70,7 @@ class App():
                    self.mensaje2="Consulta no coincidente"
                    self.factor="Ninguna respuesta obtiene un porcentaje de similitud permitido"
         self.js.edu(self.mensaje2,self.factor,self.acc)        
+        time.sleep(3)
         
     
                     
