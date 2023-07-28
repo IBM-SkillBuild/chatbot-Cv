@@ -23,7 +23,7 @@ bot.sort_replies()
 
 @js.use(app)
 class App():
-    pregunta=""
+    
         
         
     def cambiar(self,valor):
