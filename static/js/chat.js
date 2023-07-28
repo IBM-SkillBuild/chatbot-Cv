@@ -1,6 +1,6 @@
 let msg = ""
 let empezar="no"
-let respuesta="Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
+let respuesta="Hola soy Eduardo. Si no sabes que preguntarme, escribe ayuda"
 var $messages = $('.messages-content'),
     d, h, m,
     i = 0;
@@ -29,7 +29,7 @@ function setDate(){
 }
 
 function insertMessage() {
-  empezar="si"
+  
   msg = $('.message-input').val();
   if ($.trim(msg) == '') {
     return false;
