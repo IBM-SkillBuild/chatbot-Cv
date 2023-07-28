@@ -23,27 +23,27 @@ bot.sort_replies()
 
 @js.use(app)
 class App():
-   
+    pregunta=""
         
         
     def cambiar(self,valor):
          self.js.dom.info1.innerHTML = valor
     def preguntar(self,pregunta):
+        self.pregunta=pregunta
         
-        user_input=pregunta.lower()
-        self.respuesta=bot.reply("localuser",user_input)
-        self.js.respuesta=str(self.respuesta)
-        self.js.larespuesta(str(self.respuesta))
         
     @js.task
     def main(self):
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
+                  user_input=self.pregunta.lower()
+                  self.respuesta=bot.reply("localuser",user_input)
                   self.js.respuesta=str(self.respuesta)
+                  self.js.larespuesta(str(self.respuesta))
         
           
 @app.route('/')
 def single_page():
-    """ App.main() """
+    App.main() 
     return App.render(render_template('chat.html'))
 
