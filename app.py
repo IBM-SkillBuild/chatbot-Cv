@@ -29,14 +29,15 @@ class App():
     def cambiar(self,valor):
          self.js.dom.info1.innerHTML = valor
     def preguntar(self,pregunta):
-        self.pregunta=pregunta
+        self.pregunta=str(pregunta)
         
         
     @js.task
     def main(self):
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
-                  if self.js.empezar=="si":
+                   
+                   if self.js.empezar=="si":
                     user_input=self.pregunta.lower()
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
