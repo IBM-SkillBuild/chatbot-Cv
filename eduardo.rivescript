@@ -1,0 +1,14 @@
++ hola *
+- Hola, Soy un robot
++ * ayuda *
+- puedes preguntar por mis certificados, o bootcamps 
+- puedes preguntar por mis fortalezas o debilidades
++ ayuda
+- <p>puedes preguntar por mis certificados, o bootcamps <a href="url">Enlace de texto u objeto</a><p>
+- puedes preguntar por mis fortalezas o debilidades
++ (estudios|estudiaste|formacion|bootcamp|bootcamps|boot camp|boot camp|boot camps|titulos|titulo|certificado|certificados)
+- primero Estudie Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid
++ *
+- Recuerda que soy un Bot-Cv. pues preguntarme por estudios, certificados, formación, bootcamps
+- Intenta hacer tu pregunta de otra manera. Escribe cosas como Front end, back end, python, javascript
+- No tengo respuesta precisa. Preguntamé por mis datos de contacto, nombre, telefono
