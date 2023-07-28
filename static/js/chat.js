@@ -1,5 +1,5 @@
 let msg=""
-let respuesta="Hola soy Eduardo. Si no sabes que preguntarme, escribe ayuda"
+let respuesta="Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
 var $messages = $('.messages-content'),
     d, h, m,
     i = 0;
@@ -16,6 +16,7 @@ function updateScrollbar() {
     scrollInertia: 10,
     timeout: 0
   });
+  $('.message-input').focus();
 }
 
 function setDate(){
@@ -37,7 +38,8 @@ function insertMessage() {
   updateScrollbar();
   setTimeout(function() {
     fakeMessage();
-  }, 1000 + (Math.random() * 20) * 100);
+  }, 2000 + (Math.random() * 20) * 100);
+  $('.message-input').focus();
 }
 
 $('.message-submit').click(function() {
@@ -51,23 +53,6 @@ $(window).on('keydown', function(e) {
   }
 })
 
-var Fake = [
-  'Hi there, I\'m Fabio and you?',
-  'Nice to meet you',
-  'How are you?',
-  'Not too bad, thanks',
-  'What do you do?',
-  'That\'s awesome',
-  'Codepen is a nice place to stay',
-  'I think you\'re a nice person',
-  'Why do you think that?',
-  'Can you explain?',
-  'Anyway I\'ve gotta go now',
-  'It was a pleasure chat with you',
-  'Time to make a new codepen',
-  'Bye',
-  ':)'
-]
 
 function fakeMessage() {
   if ($('.message-input').val() != '') {
@@ -91,10 +76,17 @@ function fakeMessage() {
     updateScrollbar();
     respuesta=""
     i++;
-  }, 2000 + (Math.random() * 20) * 100);
+  }, 1000 + (Math.random() * 20) * 100);
 
 }
 
 function larespuesta(mirespuesta){
   respuesta=mirespuesta
+}
+
+
+function resolver(asunto) {
+  $('.message-input').val(asunto)
+  msg=asunto
+  insertMessage();
 }

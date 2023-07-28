@@ -23,7 +23,13 @@ body {
   line-height: 1.3;
   overflow: hidden;
 }
-
+a,span{
+  color: rgba(216, 219, 37, 0.5);
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
 .bg {
   width: 100%;
   height: 100%;
@@ -257,6 +263,7 @@ Message Box
   background: rgba(0, 0, 0, 0.3);
   padding: 10px;
   position: relative;
+  
 }
 .message-box .message-input {
   background: none;
@@ -264,11 +271,11 @@ Message Box
   outline: none !important;
   resize: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 11px;
-  height: 17px;
+  font-size: 18px;
+  height: 28px;
   margin: 0;
   padding-right: 20px;
-  width: 265px;
+  width: 95%;
 }
 .message-box textarea:focus:-webkit-placeholder {
   color: transparent;
