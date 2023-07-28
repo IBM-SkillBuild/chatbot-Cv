@@ -91,7 +91,7 @@ function fakeMessage() {
     updateScrollbar();
     respuesta=""
     i++;
-  }, 1000 + (Math.random() * 20) * 100);
+  }, 2000 + (Math.random() * 20) * 100);
 
 }
 
