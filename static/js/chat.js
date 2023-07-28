@@ -68,9 +68,9 @@ function fakeMessage() {
 
   setTimeout(function() {
     $('.message.loading').remove();
-    /* if (respuesta==""){
-      respuesta="error timeout de servidor"
-    } */
+    while (respuesta == ""){
+      console.log("esperando")
+    }
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
