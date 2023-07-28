@@ -44,6 +44,6 @@ class App():
           
 @app.route('/')
 def single_page():
-    App.main()
+    """ App.main() """
     return App.render(render_template('chat.html'))
 
