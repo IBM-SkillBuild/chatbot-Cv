@@ -35,9 +35,15 @@ class App():
         self.js.respuesta=str(self.respuesta)
         self.js.larespuesta(str(self.respuesta))
         
-
+    @js.task
+    def main(self):
+                # nuestro bucle hace las veces de "event listener of javascript"
+                while True:
+                  self.js.respuesta=str(self.respuesta)
+        
+          
 @app.route('/')
 def single_page():
-   
+    App.main()
     return App.render(render_template('chat.html'))
 
