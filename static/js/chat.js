@@ -1,5 +1,5 @@
 let msg = ""
-let buscar="no"
+let empezar="no"
 let respuesta="Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
 var $messages = $('.messages-content'),
     d, h, m,
@@ -29,6 +29,7 @@ function setDate(){
 }
 
 function insertMessage() {
+  empezar="si"
   msg = $('.message-input').val();
   if ($.trim(msg) == '') {
     return false;
@@ -60,7 +61,7 @@ function fakeMessage() {
     return false;
   }
   if (msg != "") {
-    buscar="si"
+    
     server.preguntar(msg)
     
   }
@@ -77,7 +78,7 @@ function fakeMessage() {
     setDate();
     updateScrollbar();
     respuesta = ""
-    buscar="no"
+    
     i++;
   }, 500 + (Math.random() * 20) * 100);
  

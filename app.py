@@ -36,11 +36,12 @@ class App():
     def main(self):
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
-                  if str(self.js.buscar)=="si":
+                  if self.js.empezar=="si":
                     user_input=self.pregunta.lower()
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
                     self.js.larespuesta(str(self.respuesta))  
+                    
         
           
 @app.route('/')
