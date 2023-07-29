@@ -80,8 +80,9 @@ class App():
                               #self.js.larespuesta("Ninguna respuesta obtiene un porcentaje de similitud permitido") 
                               self.respuesta=bot.reply("localuser",user_input)
                               self.js.respuesta=str(self.respuesta)
-                              self.js.larespuesta(str(self.respuesta)) 
+                              self.js.larespuesta(str(self.respuesta))
                     
+                    self.js.escribir()
                     
                     
                     

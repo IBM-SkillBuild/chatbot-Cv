@@ -69,9 +69,7 @@ function fakeMessage() {
     
     cargando();
     empezar="si"
-    setTimeout(function () {
-      escribir()
-    }, 2000);
+    
 
    
   
