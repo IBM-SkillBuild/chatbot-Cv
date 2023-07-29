@@ -63,8 +63,9 @@ function fakeMessage() {
     return false;
   }
   if (msg != "") {
-    cargando()
-    server.preguntar() 
+    
+    empezar="si"
+    cargando();
     
     
     

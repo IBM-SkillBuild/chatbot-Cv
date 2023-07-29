@@ -40,8 +40,8 @@ class App():
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
                    
-                  if str(self.empezar)=="si":  
-                    self.empezar="no"
+                  if str(self.js.empezar)=="si":  
+                    self.js.empezar="no"
                     user_input=str(self.js.msg)
                     mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
                     mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
@@ -54,18 +54,18 @@ class App():
                     porcentaje_obtenido=0
                                                               
                     for question in chatbot_data['datos']:
-                        porcentaje_iterado=fuzz.token_sort_ratio(user_input,question['pregunta'].lower())+\
-                        fuzz.partial_ratio(user_input,question['respuesta'].lower() ) 
+                        porcentaje_iterado=fuzz.token_sort_ratio(user_input,question['pregunta'])+\
+                        fuzz.partial_ratio(user_input,question['respuesta'] ) 
                             
                       
                         if porcentaje_iterado>porcentaje_obtenido:
                           
-                            mejor_coincidencia=question['pregunta'].lower()
-                            mejor_respuesta=question['respuesta'].lower()
-                            mejor_accion=question['accion'].lower()
-                            mejor_ejecucion=question['path'].lower()
-                            mejor_url=question['url'].lower()
-                            mejor_seguridad=question['seguridad'].lower()
+                            mejor_coincidencia=question['pregunta']
+                            mejor_respuesta=question['respuesta']
+                            mejor_accion=question['accion']
+                            mejor_ejecucion=question['path']
+                            mejor_url=question['url']
+                            mejor_seguridad=question['seguridad']
                             porcentaje_obtenido=porcentaje_iterado
                             if porcentaje_obtenido>85:
                               #self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)

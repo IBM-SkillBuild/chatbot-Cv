@@ -3,7 +3,7 @@
   "datos": [
     {
       "pregunta": "Como te llamas, quien eres",
-      "respuesta": "Soy un chatbot. Un chatbot diseñado por Eduardo Cabrera",
+      "respuesta": "<p>Soy un chatbot. Un chatbot diseñado por Eduardo Cabrera</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -11,16 +11,16 @@
     },
 
     {
-      "pregunta": "Hola, Dime tu nombre y teléfono",
-      "respuesta": "Hola, Mi nombre es Eduardo. Telefono 696 44 80 60",
+      "pregunta": "Dime tu nombre y teléfono",
+      "respuesta": "<p>Mi nombre es Eduardo. Telefono 696 44 80 60 email: ecabrerablazquez@gmail.com -<a href='javascript:resolver(\"datos de contacto\")'>- Aqui tienes más información</a></p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
       "seguridad": "admin"
     },
     {
-      "pregunta": "sabes hacer en programacion Python, Flask, FastApi, Django",
-      "respuesta": "puedo programar en python Scripts de consola, en Flask, FastApi o django",
+      "pregunta": "Sabes hacer en programacion Python, Flask, FastApi, Django",
+      "respuesta": "<p>Puedo programar en python Scripts de consola, en Flask, FastApi o Django</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -29,7 +29,7 @@
 
     {
       "pregunta": "sabes hacer en Front End",
-      "respuesta": "Me manejo en HTML, CSS y Javascript y me atrevo en Bundles o Frameworks como React o Vue",
+      "respuesta": "<p>Me manejo en HTML, CSS y Javascript y me atrevo en Bundles o Frameworks como React o Vue</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -37,7 +37,7 @@
     },
     {
       "pregunta": "sabes hacer en Back End",
-      "respuesta": "Para el Back end Me manejo en Python, aunque vi algo en PHP",
+      "respuesta": "<p>Para el Back end Me manejo en Python, aunque me interesan otros lenguajes</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -46,7 +46,7 @@
     
     {
       "pregunta": "Estudios Formacion formacion formación bootcamp boot camp boot-camp Bootcamps titulos certificados",
-      "respuesta": "primero Estudie Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "respuesta": "<p>Primero Estudie Vb.Net o visual basic.net presencial con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -54,7 +54,7 @@
     },
     {
       "pregunta": "Formacion Bootcamps titulos certificados",
-      "respuesta": "Mi formación comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "respuesta": "<p>Mi formación comenzo en Vb.Net o visual basic.net con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -62,7 +62,7 @@
     },
     {
       "pregunta": "Bootcamp titulos certificados formacion formación",
-      "respuesta": "Mi formacion comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "respuesta": "<p>Mi formación comenzo en Vb.Net o visual basic.net presencial con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -70,7 +70,7 @@
     },
     {
       "pregunta": "Formacion Bootcamps titulos certificados",
-      "respuesta": "Mi Formacion comenzo en Vb.Net o visual basic.net,con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid",
+      "respuesta": "<p>Mi Formacion comenzo en Vb.Net o visual basic.net presencial con certificado, otros titulos en desarrollo web, Bootcamp General assemby front end React, IBM full stack, y programación en python por la escuela de talento del ayuntamiento de Madrid</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
@@ -78,15 +78,15 @@
     },
     {
       "pregunta": "Datos de contacto, calle, ciudad, nombre, codigo postal (datos de contacto)",
-      "respuesta": "Datos de contacto... Hola, soy Eduardo Cabrera Blazquez. Calle Luna 27 CP (28692) Villanueva de la Cañada (Madrid)",
+      "respuesta": "<p>Datos de contacto.. Soy Eduardo Cabrera Blazquez. Calle Luna 27 CP (28692) Villanueva de la Cañada (Madrid)-<a href='javascript:resolver(\"Dime tu nombre y teléfono\")'>- Ver teléfono</a></p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
       "seguridad": "admin"
     },
     {
-      "pregunta": "orientada a objetos",
-      "respuesta": "Es el paradigma más usado , las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion",
+      "pregunta": "programacion orientada a objetos",
+      "respuesta": "<p>la programación orientada ss el paradigma más usado , las clases, sus atributos y metodos. La instancia de objetos. La herencia, la encapsulacion y la abstraccion</p>",
       "accion": "aleatorio de maquina ",
       "path": "",
       "url": "",
