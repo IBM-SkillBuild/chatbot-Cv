@@ -86,6 +86,7 @@ function escribir(){
        if (respuesta == '') {
          setTimeout(function () {
            cargando();
+           respuesta=""
            escribir();
          }, 1000);
          return false;
