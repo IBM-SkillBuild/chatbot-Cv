@@ -79,7 +79,7 @@ function fakeMessage() {
 function escribir(){
   
  if (respuesta == '') {
-   msg = msg2;
+  
    server.preguntar();
  }
   setTimeout(function() {

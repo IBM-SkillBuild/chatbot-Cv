@@ -42,7 +42,7 @@ class App():
                    
                   if str(self.js.empezar)=="si":  
                     self.js.empezar="no"
-                    user_input=str(self.js.msg)
+                    user_input=str(self.js.msg2)
                     mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
                     mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
                     mejor_accion=chatbot_data['datos'][0]['accion'] 
