@@ -74,17 +74,17 @@ function fakeMessage() {
  
 }
 function escribir(){
-  if (respuesta == '') {
-    respuesta = 'error timeout de servidor';
-    msg = msg2;
-    server.preguntar();
-    return false
-  }
+ 
  
   setTimeout(function () {
    
     $('.message.loading').remove();
-    
+     if (respuesta == '') {
+       respuesta = 'error timeout de servidor';
+       msg = msg2;
+       server.preguntar();
+       return false;
+     }
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
