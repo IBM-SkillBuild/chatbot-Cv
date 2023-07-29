@@ -418,7 +418,7 @@ Bounce
     transform: translateY(-10px);
   }
 }
-@media (max-width: 10240px) {
+@media (max-width: 1024px) {
   .chat {
     width: 95%;
   }

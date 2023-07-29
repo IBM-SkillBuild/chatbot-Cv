@@ -98,7 +98,7 @@ function escribir(){
        
     
     
-  }, 1000 + (Math.random() * 20) * 100);
+  }, 100 + (Math.random() * 20) * 100);
   
 }
 function cargando() {
