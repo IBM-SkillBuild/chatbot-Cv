@@ -74,8 +74,7 @@ function fakeMessage() {
  
 }
 function escribir(){
-  $('<div class="message loading new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
-  updateScrollbar();
+  
 
   setTimeout(function() {
     $('.message.loading').remove();
