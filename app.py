@@ -31,7 +31,7 @@ class App():
     def cambiar(self,valor):
          self.js.dom.info1.innerHTML = valor
     def preguntar(self):
-        self.empezar="si"
+        self.js.empezar="si"
         
         
         
