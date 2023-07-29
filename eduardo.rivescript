@@ -52,8 +52,8 @@
 - <p>Me falta rodaje en empresas y trabajo en equipo -<a href="javascript:resolver('formacion')">-Ver mi formación</a></p>
 
 + *
-- <p>No tengo respuesta precisa.<a href="javascript:resolver('ayuda')">Pulsa aqui para ayuda</a></p>
-- <p>Recuerda que soy un Bot-Cv. pues preguntarme por estudios, certificados, formación, bootcamps -<a href="javascript:resolver('ayuda')">Pulsa aqui para ayuda</a></p>
-- <p>Intenta hacer tu pregunta de otra manera. Escribe cosas como Front end, back end, python, javascript-<a href="javascript:resolver('ayuda')">Pulsa aqui para ayuda</a></p>
+- <p>Hola.<a href="javascript:resolver('ayuda')">Pulsa aqui para obtener ayuda</a></p>
+- <p>Hola.Recuerda que soy un Bot-Cv. pues preguntarme por estudios, certificados, formación, bootcamps -<a href="javascript:resolver('ayuda')">Pulsa aqui para ayuda</a></p>
+- <p>Hola. Debes Escribir cosas como Front end, back end, python, javascript-<a href="javascript:resolver('ayuda')">Pulsa aqui para ayuda</a></p>
 
 

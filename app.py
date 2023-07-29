@@ -23,7 +23,7 @@ bot.sort_replies()
 
 @js.use(app)
 class App():
-    
+    pregunta=""
         
         
     def cambiar(self,valor):
@@ -37,7 +37,6 @@ class App():
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
                    
-                  if self.js.respuesta !="Hola soy Eduardo. Si no sabes que preguntarme, escribe ayuda":
                     user_input=self.pregunta.lower()
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
