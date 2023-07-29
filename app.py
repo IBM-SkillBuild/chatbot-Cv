@@ -47,8 +47,38 @@ class App():
                     self.js.empezar="no"
                     time.sleep(0.5)
                     user_input=str(self.js.msg)
-                    self.respuesta=bot.reply("localuser",user_input)
-                    self.js.respuesta=str(self.respuesta)
+                    mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
+                    mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
+                    mejor_accion=chatbot_data['datos'][0]['accion'] 
+                    mejor_ejecucion=chatbot_data['datos'][0]['path'] 
+                    mejor_url=chatbot_data['datos'][0]['url'] 
+                    
+       
+        
+                    porcentaje_obtenido=0
+                                                  
+                    for question in chatbot_data['datos']:
+                        porcentaje_iterado=fuzz.token_sort_ratio(user_input,question['pregunta'].lower())+\
+                        fuzz.partial_ratio(user_input,question['respuesta'].lower() ) 
+                            
+                      
+                        if porcentaje_iterado>porcentaje_obtenido:
+                          
+                            mejor_coincidencia=question['pregunta'].lower()
+                            mejor_respuesta=question['respuesta'].lower()
+                            mejor_accion=question['accion'].lower()
+                            mejor_ejecucion=question['path'].lower()
+                            mejor_url=question['url'].lower()
+                            mejor_seguridad=question['seguridad'].lower()
+                            porcentaje_obtenido=porcentaje_iterado
+                            if porcentaje_obtenido>100:
+                            #self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
+                              self.js.respuesta = str(mejor_respuesta)
+                              self.js.larespuesta(str(mejor_respuesta))
+                            else:
+                              self.respuesta=bot.reply("localuser",user_input)
+                              self.js.respuesta=str(self.respuesta)
+                              self.js.larespuesta(self.respuesta)
                     time.sleep(0.5)
                     
                     
