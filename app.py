@@ -30,6 +30,10 @@ class App():
          self.js.dom.info1.innerHTML = valor
     def preguntar(self,pregunta):
         self.pregunta=str(pregunta)
+        user_input=self.pregunta.lower()
+        self.respuesta=bot.reply("localuser",user_input)
+        self.js.respuesta=str(self.respuesta)
+        self.js.larespuesta(str(self.respuesta))
         time.sleep(0.5)
         self.js.escribir()
         
@@ -48,6 +52,6 @@ class App():
           
 @app.route('/')
 def single_page():
-    App.main() 
+    """  App.main()  """
     return App.render(render_template('chat.html'))
 
