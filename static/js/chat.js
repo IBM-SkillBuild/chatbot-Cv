@@ -1,4 +1,5 @@
 let msg = ""
+let msg2=""
 let empezar="no"
 let respuesta=""
 var $messages = $('.messages-content'),
@@ -63,7 +64,7 @@ function fakeMessage() {
     return false;
   }
   if (msg != "") {
-    
+    msg2=msg
     empezar="si"
     cargando();
     escribir()
@@ -82,6 +83,7 @@ function escribir(){
     $('.message.loading').remove();
     if (respuesta==""){
       respuesta = "error timeout de servidor"
+      msg=msg2
       server.preguntar()
     }
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
