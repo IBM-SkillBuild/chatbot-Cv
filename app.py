@@ -45,11 +45,11 @@ class App():
                   if self.js.empezar=="si":
                     
                     self.js.empezar="no"
-                    
+                    time.sleep(1)
                     user_input=str(self.js.msg)
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
-                    
+                    time.sleep(1)
                     
                     
                     
