@@ -117,5 +117,5 @@ function larespuesta(mirespuesta){
 function resolver(asunto) {
   $('.message-input').val(asunto)
   msg=asunto
-  insertMessage();
+  $('.message-submit').click()
 }
