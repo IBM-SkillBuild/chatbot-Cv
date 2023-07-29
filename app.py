@@ -80,6 +80,7 @@ class App():
                               self.js.larespuesta(str(self.respuesta)) 
                     
                     self.js.msg=""
+                    self.js.escribir()
                     
                     
         
