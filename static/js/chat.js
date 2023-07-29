@@ -81,8 +81,8 @@ function escribir(){
 
   setTimeout(function() {
     $('.message.loading').remove();
-    if (respuesta==""){
-      respuesta = "error timeout de servidor"
+    while (respuesta==""){
+      
       msg=msg2
       server.preguntar()
     }
