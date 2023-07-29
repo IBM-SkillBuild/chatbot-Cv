@@ -69,8 +69,9 @@ function fakeMessage() {
     
     cargando();
     empezar="si"
-    escribir()
-   
+    setTimeout(function () {
+      escribir()
+    }, 2000);
 
    
   
@@ -99,7 +100,7 @@ function escribir(){
        
     
     
-  }, 2000 + (Math.random() * 20) * 100);
+  }, 1000 + (Math.random() * 20) * 100);
   
 }
 function cargando() {
