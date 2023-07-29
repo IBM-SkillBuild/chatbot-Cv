@@ -66,7 +66,7 @@ function fakeMessage() {
   }
   if (msg != "") {
     msg2=msg
-    
+    respuesta=""
     cargando();
     
     escribir()
