@@ -89,7 +89,7 @@ function escribir(){
            
            escribir();
          }, 500);
-         return false;
+        
        }
        if (respuesta != '') {
          $(
