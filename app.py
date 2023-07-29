@@ -34,11 +34,13 @@ class App():
         self.js.escribir()
         
         
+        
     @js.task
     def main(self):
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
                    
+                  if self.pregunta !="":  
                     user_input=self.pregunta.lower()
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)

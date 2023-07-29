@@ -1,6 +1,6 @@
 let msg = ""
 let empezar="no"
-let respuesta="Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
+let respuesta=""
 var $messages = $('.messages-content'),
     d, h, m,
     i = 0;
@@ -9,8 +9,9 @@ $(window).load(function() {
   $messages.mCustomScrollbar();
   setTimeout(function() {
     /*  fakeMessage(); */
-    let pregunta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
+    respuesta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
     escribir()
+    
   }, 100);
 });
 
@@ -82,10 +83,12 @@ function escribir(){
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
-    
+    respuesta=""
+   
     
     i++;
   }, 100 + (Math.random() * 20) * 100);
+  
 }
 
 
