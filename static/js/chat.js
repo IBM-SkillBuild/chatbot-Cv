@@ -12,7 +12,7 @@ $(window).load(function() {
     /*  fakeMessage(); */
     respuesta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
     escribir()
-    empezar = 'si';
+    
     
   }, 100);
 });
@@ -68,9 +68,9 @@ function fakeMessage() {
     msg2=msg
     
     cargando();
-   setTimeout(function () {
-     escribir()
-   }, 1000);
+    server.preguntar()
+    escribir()
+  
      
   }
   
