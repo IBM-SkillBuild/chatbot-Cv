@@ -91,7 +91,7 @@ function escribir() {
          setTimeout(function () {         
            
            escribir();
-         }, 500);
+         }, 1000);
         
        }
        if (respuesta != '') {
