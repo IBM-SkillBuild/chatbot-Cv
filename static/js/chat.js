@@ -66,7 +66,7 @@ function fakeMessage() {
   }
   if (msg != "") {
     msg2=msg
-    respuesta=""
+    
     cargando();
     
     escribir()
@@ -123,6 +123,6 @@ function larespuesta(mirespuesta){
 function resolver(asunto) {
   $('.message-input').val(asunto)
   msg = asunto
-  respuesta=""
+  
   insertMessage();
 }
