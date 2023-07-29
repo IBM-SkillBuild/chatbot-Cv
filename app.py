@@ -42,7 +42,7 @@ class App():
                 while True:
 
                  
-                  
+                  if self.js.empezar=="si":
                     
                     time.sleep(1)
                     user_input=str(self.js.msg)

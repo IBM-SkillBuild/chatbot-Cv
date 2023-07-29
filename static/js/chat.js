@@ -12,6 +12,7 @@ $(window).load(function() {
     /*  fakeMessage(); */
     respuesta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
     escribir()
+    empezar="si"
     
     
   }, 100);
