@@ -68,7 +68,7 @@ function fakeMessage() {
     msg2=msg
     
     cargando();
-    empezar = "si"
+    
     escribir()
     
 
@@ -87,7 +87,7 @@ function escribir(){
    
     $('.message.loading').remove();
      if (respuesta == '') {
-       respuesta = 'error timeout de servidor. prueba de nuevo';
+       escribir()
        
        
      }
