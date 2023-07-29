@@ -12,7 +12,7 @@ $(window).load(function() {
     /*  fakeMessage(); */
     respuesta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
     escribir()
-    empezar="si"
+   
     
     
   }, 100);
@@ -67,7 +67,7 @@ function fakeMessage() {
   }
   if (msg != "") {
     msg2=msg
-    
+    empezar="si"
     cargando();
     
     escribir()
@@ -81,7 +81,8 @@ function fakeMessage() {
   
  
 }
-function escribir(){
+function escribir() {
+  empezar="si"
      setTimeout(function () {
        $('.message.loading').remove();
        if (respuesta == '') {
@@ -103,6 +104,7 @@ function escribir(){
          setDate();
          updateScrollbar();
          respuesta = '';
+         empezar="no"
        }
      }, 1500);
        
