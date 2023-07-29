@@ -44,7 +44,7 @@ class App():
                  
                   
                     
-                    time.sleep(0.5)
+                    time.sleep(1)
                     user_input=str(self.js.msg)
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
