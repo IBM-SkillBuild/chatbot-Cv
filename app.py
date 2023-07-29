@@ -39,11 +39,12 @@ class App():
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
                    
-                  if str(self.js.empezar)=="si":  
+                  if str(self.js.msg)!="":  
                     user_input=str(self.js.msg)
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
                     self.js.larespuesta(str(self.respuesta))  
+                  if str(self.js.empezar)=="si":    
                     self.js.escribir()
                     self.js.msg=""
                     self.js.empezar="no"
