@@ -122,6 +122,7 @@ function larespuesta(mirespuesta){
 
 function resolver(asunto) {
   $('.message-input').val(asunto)
-  msg=asunto
+  msg = asunto
+  respuesta=""
   insertMessage();
 }
