@@ -8,7 +8,9 @@ var $messages = $('.messages-content'),
 $(window).load(function() {
   $messages.mCustomScrollbar();
   setTimeout(function() {
-    fakeMessage();
+    /*  fakeMessage(); */
+    let pregunta = "Hola soy Eduardo.  Si no sabes que preguntarme, escribe ayuda"
+    escribir()
   }, 100);
 });
 
@@ -65,6 +67,10 @@ function fakeMessage() {
     
   }
   
+  
+ 
+}
+function escribir(){
   $('<div class="message loading new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
@@ -79,9 +85,9 @@ function fakeMessage() {
     
     
     i++;
-  }, 2000 + (Math.random() * 20) * 100);
- 
+  }, 500 + (Math.random() * 20) * 100);
 }
+
 
 function larespuesta(mirespuesta){
   respuesta=mirespuesta
