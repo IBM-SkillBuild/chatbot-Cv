@@ -78,14 +78,12 @@ function fakeMessage() {
 }
 function escribir(){
   
-
+ if (respuesta == '') {
+   msg = msg2;
+   server.preguntar();
+ }
   setTimeout(function() {
     $('.message.loading').remove();
-    while (respuesta==""){
-      
-      msg=msg2
-      server.preguntar()
-    }
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
@@ -93,7 +91,7 @@ function escribir(){
    
     
     i++;
-  }, 100 + (Math.random() * 20) * 100);
+  }, 1000 + (Math.random() * 20) * 100);
   
 }
 function cargando() {
