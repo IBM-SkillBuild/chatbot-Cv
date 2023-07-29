@@ -45,7 +45,7 @@ class App():
                   if self.js.empezar=="si":
                     
                     self.js.empezar="no"
-                    time.sleep(1)
+                   
                     user_input=str(self.js.msg)
                     mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
                     mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
@@ -79,7 +79,7 @@ class App():
                               self.respuesta=bot.reply("localuser",user_input)
                               self.js.respuesta=str(self.respuesta)
                               self.js.larespuesta(self.respuesta)
-                    time.sleep(1)
+                    
                     
                     
                     
