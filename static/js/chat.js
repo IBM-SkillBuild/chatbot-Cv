@@ -72,7 +72,7 @@ function fakeMessage() {
     server.preguntar()
     setTimeout(function () {
       escribir()
-    }, 2500);
+    }, 3000);
 
    
   
