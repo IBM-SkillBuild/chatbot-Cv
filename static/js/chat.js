@@ -69,7 +69,10 @@ function fakeMessage() {
     
     cargando();
     server.preguntar()
-    escribir()
+    setTimeout(function () {
+       escribir();
+    }, 1000);
+   
   
      
   }
