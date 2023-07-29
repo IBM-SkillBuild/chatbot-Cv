@@ -71,7 +71,7 @@ function fakeMessage() {
     empezar="si"
     setTimeout(function () {
        escribir();
-    }, 3000);
+    }, 1000);
    
   
      
