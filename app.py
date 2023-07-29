@@ -32,6 +32,7 @@ class App():
          self.js.dom.info1.innerHTML = valor
     def preguntar(self):
         self.empezar="si"
+        self.js.empezar="si"
         
         
         
@@ -40,8 +41,7 @@ class App():
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
                    
-                  if str(self.js.empezar)=="si":  
-                    time.sleep(0.5)
+                  if str(self.js.empezar)=="si" or str(self.empezar)=="si":  
                     self.js.empezar="no"
                     user_input=str(self.js.msg)
                     mejor_coincidencia=chatbot_data['datos'][0]['pregunta']

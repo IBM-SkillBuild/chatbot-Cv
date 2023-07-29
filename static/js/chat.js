@@ -69,9 +69,11 @@ function fakeMessage() {
     
     cargando();
     empezar="si"
+    server.preguntar()
     setTimeout(function () {
-       escribir();
-    }, 1000);
+      escribir()
+    }, 2000);
+
    
   
      
