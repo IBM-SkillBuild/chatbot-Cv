@@ -84,19 +84,14 @@ function escribir(){
     $('.message.loading').remove();
      if (respuesta == '') {
        respuesta = 'error timeout de servidor.wait a moment';
-       server.preguntar()
+       
        
      }
     $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
-     if (respuesta == 'error timeout de servidor.wait a moment') {
-       respuesta = 'error timeout de servidor.wait a moment';
-       server.preguntar();
-       escribir();
-     }
-     respuesta = '';
-   
+    
+       
     
     
   }, 1000 + (Math.random() * 20) * 100);
