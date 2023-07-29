@@ -64,7 +64,9 @@ function fakeMessage() {
   }
   if (msg != "") {
     
-    server.preguntar(msg)
+    /*  server.preguntar(msg) */
+    empezar = "si"
+    
     
   }
   
