@@ -66,6 +66,7 @@ function fakeMessage() {
     
     empezar="si"
     cargando();
+    escribir()
     
     
     
