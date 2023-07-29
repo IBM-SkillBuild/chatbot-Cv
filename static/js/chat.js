@@ -82,7 +82,7 @@ function fakeMessage() {
 function escribir(){
  
  
-  setTimeout(function () {
+  
    
     $('.message.loading').remove();
      if (respuesta == '') {
@@ -98,7 +98,7 @@ function escribir(){
        
     
     
-  }, 100 + (Math.random() * 20) * 100);
+  
   
 }
 function cargando() {
