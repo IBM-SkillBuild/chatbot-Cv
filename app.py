@@ -67,10 +67,10 @@ class App():
                             mejor_url=question['url'].lower()
                             mejor_seguridad=question['seguridad'].lower()
                             porcentaje_obtenido=porcentaje_iterado
-                            if porcentaje_obtenido>80:
+                            if porcentaje_obtenido>85:
                               #self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
-                              self.js.respuesta = str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
-                              self.js.larespuesta(str(mejor_respuesta)+ ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido))
+                              self.js.respuesta = str(mejor_respuesta) 
+                              self.js.larespuesta(str(mejor_respuesta))
                             else:
                               #self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
                               #self.js.respuesta ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
