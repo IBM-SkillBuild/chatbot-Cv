@@ -68,7 +68,8 @@ function fakeMessage() {
     msg2=msg
     
     cargando();
-    empezar="si"
+    empezar = "si"
+    escribir()
     
 
    

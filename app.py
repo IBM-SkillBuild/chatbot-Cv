@@ -40,16 +40,16 @@ class App():
     def main(self):
                 # nuestro bucle hace las veces de "event listener of javascript"
                 while True:
-                   
-                  if str(self.js.empezar)=="si" or str(self.empezar)=="si":  
-                    self.js.empezar="no"
-                    self.js.respuesta=""
-                    self.js.larespuesta("")
+
+                 
+                  
+                    
+                    
                     user_input=str(self.js.msg)
                     self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
-                    time.sleep(1)
-                    self.js.escribir()
+                    
+                    
                     
                     
                     
