@@ -9,6 +9,7 @@ import time
 import os
 import json
 from rivescript import RiveScript
+from fuzzywuzzy import fuzz
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 #load the JSON file
@@ -42,9 +43,41 @@ class App():
                   if str(self.js.empezar)=="si":  
                     self.js.empezar="no"
                     user_input=str(self.js.msg)
-                    self.respuesta=bot.reply("localuser",user_input)
+                    """ self.respuesta=bot.reply("localuser",user_input)
                     self.js.respuesta=str(self.respuesta)
-                    self.js.larespuesta(str(self.respuesta))  
+                    self.js.larespuesta(str(self.respuesta)) """  
+                    mejor_coincidencia=chatbot_data['datos'][0]['pregunta']
+                    mejor_respuesta=chatbot_data['datos'][0]['respuesta']  
+                    mejor_accion=chatbot_data['datos'][0]['accion'] 
+                    mejor_ejecucion=chatbot_data['datos'][0]['path'] 
+                    mejor_url=chatbot_data['datos'][0]['url'] 
+                    
+                  
+                    
+                    porcentaje_obtenido=0
+                                                              
+                    for question in chatbot_data['datos']:
+                        porcentaje_iterado=fuzz.token_sort_ratio(user_input,question['pregunta'].lower())+\
+                        fuzz.partial_ratio(user_input,question['respuesta'].lower() ) 
+                            
+                      
+                        if porcentaje_iterado>porcentaje_obtenido:
+                          
+                            mejor_coincidencia=question['pregunta'].lower()
+                            mejor_respuesta=question['respuesta'].lower()
+                            mejor_accion=question['accion'].lower()
+                            mejor_ejecucion=question['path'].lower()
+                            mejor_url=question['url'].lower()
+                            mejor_seguridad=question['seguridad'].lower()
+                            porcentaje_obtenido=porcentaje_iterado
+                            if porcentaje_obtenido>80:
+                              #self.js.dom.mensaje2.innerHTML="La mejor coincidencia....:  "+str(mejor_coincidencia)
+                              self.js.respuesta = str(mejor_respuesta) + ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido)
+                              self.js.larespuesta(str(mejor_respuesta)+ ". Se ha elegido esta respuesta con una puntuación de "+str(porcentaje_obtenido))
+                            else:
+                              #self.js.dom.mensaje2.innerHTML="Consulta no coincidente"
+                              self.js.respuesta ="Ninguna respuesta obtiene un porcentaje de similitud permitido"
+                              self.js.larespuesta("Ninguna respuesta obtiene un porcentaje de similitud permitido") 
                     self.js.escribir()
                     self.js.msg=""
                     
