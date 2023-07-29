@@ -82,10 +82,11 @@ function fakeMessage() {
  
 }
 function escribir() {
-  empezar="si"
+ 
      setTimeout(function () {
        $('.message.loading').remove();
        if (respuesta == '') {
+         empezar = 'si';
          cargando();
          setTimeout(function () {         
            
