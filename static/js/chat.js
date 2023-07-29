@@ -41,7 +41,7 @@ function insertMessage() {
   updateScrollbar();
   setTimeout(function() {
     fakeMessage();
-  }, 1000 + (Math.random() * 20) * 100);
+  }, 100 + (Math.random() * 20) * 100);
   $('.message-input').focus();
 }
 
@@ -85,7 +85,7 @@ function escribir(){
     
     
     i++;
-  }, 1000 + (Math.random() * 20) * 100);
+  }, 100 + (Math.random() * 20) * 100);
 }
 
 
