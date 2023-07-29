@@ -87,12 +87,11 @@ function escribir() {
        $('.message.loading').remove();
        if (respuesta == '') {
          empezar = 'si';
-          
          cargando();
          setTimeout(function () {         
           
            escribir();
-         }, 2000);
+         }, 3000);
         
        }
        if (respuesta != '') {
@@ -108,7 +107,7 @@ function escribir() {
          respuesta = '';
          empezar="no"
        }
-     }, 2000);
+     }, 500);
        
     
     
