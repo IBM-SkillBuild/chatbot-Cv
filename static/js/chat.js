@@ -88,20 +88,18 @@ function escribir(){
     $('.message.loading').remove();
      if (respuesta == '') {
       
-       setTimeout(function () {
-         cargando();
-         escribir();
-       }, 1000);
+       procesardenuevo()
+       return false
        
     }
   if (respuesta!= ""){
         $('<div class="message new"><figure class="avatar"><img src="../static/images/foto-chatbot-edu.png" /></figure>' + respuesta + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
-    
+    respuesta = '';
 
     }
-    respuesta = '';
+
        
     
     
@@ -122,4 +120,9 @@ function resolver(asunto) {
   $('.message-input').val(asunto)
   msg=asunto
   insertMessage();
+}
+
+function procesardenuevo() {
+  cargando()
+  escribir()
 }
