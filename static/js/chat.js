@@ -84,11 +84,11 @@ function escribir(){
      setTimeout(function () {
        $('.message.loading').remove();
        if (respuesta == '') {
-         setTimeout(function () {
-           cargando();
+         cargando();
+         setTimeout(function () {         
            respuesta=""
            escribir();
-         }, 1000);
+         }, 500);
          return false;
        }
        if (respuesta != '') {
@@ -103,7 +103,7 @@ function escribir(){
          updateScrollbar();
          respuesta = '';
        }
-     }, 1000);
+     }, 1500);
        
     
     
