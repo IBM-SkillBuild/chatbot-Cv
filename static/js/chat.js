@@ -87,9 +87,10 @@ function escribir() {
        $('.message.loading').remove();
        if (respuesta == '') {
          empezar = 'si';
+          msg = msg2;
          cargando();
          setTimeout(function () {         
-           
+          
            escribir();
          }, 2000);
         
