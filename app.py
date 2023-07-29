@@ -79,7 +79,7 @@ class App():
                               self.js.respuesta=str(self.respuesta)
                               self.js.larespuesta(str(self.respuesta)) 
                     
-                    self.js.msg=""
+                    
                     
                     
                     
