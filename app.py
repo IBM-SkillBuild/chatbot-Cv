@@ -30,7 +30,7 @@ class App():
          self.js.dom.info1.innerHTML = valor
     def preguntar(self,pregunta):
         self.pregunta=str(pregunta)
-        time.sleep(0.7)
+        time.sleep(1)
         self.js.escribir()
         
         
