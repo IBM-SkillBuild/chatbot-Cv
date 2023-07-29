@@ -72,7 +72,7 @@ function fakeMessage() {
     server.preguntar()
     setTimeout(function () {
       escribir()
-    }, 3000);
+    }, 3500);
 
    
   
@@ -117,5 +117,5 @@ function larespuesta(mirespuesta){
 function resolver(asunto) {
   $('.message-input').val(asunto)
   msg=asunto
-  $('.message-submit').click()
+  insertMessage();
 }
