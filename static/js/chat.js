@@ -85,7 +85,7 @@ function escribir(){
     
     
     i++;
-  }, 500 + (Math.random() * 20) * 100);
+  }, 100 + (Math.random() * 20) * 100);
 }
 
 
