@@ -91,7 +91,7 @@ function escribir() {
          setTimeout(function () {         
           
            escribir();
-         }, 1000);
+         }, 3000);
         
        }
        if (respuesta != '') {
@@ -107,7 +107,7 @@ function escribir() {
          respuesta = '';
          empezar="no"
        }
-     }, 1000);
+     }, 500);
        
     
     
