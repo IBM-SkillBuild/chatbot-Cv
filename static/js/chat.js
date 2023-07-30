@@ -107,7 +107,7 @@ function escribir() {
          respuesta = '';
          empezar="no"
        }
-     }, 2000);
+     }, 500);
        
     
     
